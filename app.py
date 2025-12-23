@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from sklearn.tree import DecisionTreeRegressor
 import joblib
-import matplotlib.pyplot as plt
 
 model = joblib.load("rfmodel.pkl")  
 
@@ -98,3 +97,4 @@ if st.button("Predict Consumption & Bill"):
 
     st.subheader("Predicted Electricity Bill")
     st.metric("Monthly Bill (₹)", f"{predicted_bill:.2f}")
+
